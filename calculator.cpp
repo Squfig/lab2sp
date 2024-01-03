@@ -16,3 +16,12 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+
+int Calculator::Pow(double a, double b)
+{
+    int res = 1;
+    for (int i = 0; i < b; i++){
+        res *= a;
+    }
+    return res;
+}
